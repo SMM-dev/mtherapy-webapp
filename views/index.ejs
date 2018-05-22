@@ -4,12 +4,57 @@
     <meta charset="utf-8">
     <title><%= B_N %></title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
-<body>
-<div class="home-page">
-    <p>Initial site upload for <%= B_N %></p>
 
-</div>
+<header>
+    <nav class="navbar navbar-expand navbar-light">
+        <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link">
+                        <img class="contact-icon" src="assets/phone-icon.svg" /><%= P_N %>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:<%= E_A %>" target="_blank" class="nav-link">
+                        <img class="contact-icon email-icon" src="assets/email-icon.svg" /><%= E_A %>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= FB %>" target="_blank" class="nav-link">
+                        <img class="contact-icon" src="assets/facebook-icon.svg" />
+                    </a>
+                </li>
+        </ul>
+    </nav>
+</header>
+<nav class="navbar navbar-expand main-nav">
+    <a class="navbar-brand" href="#">
+        <img class="logo" src="assets/logo.png" alt="logo"/>
+    </a>
+    <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+        </div>
+    </ul>
+</nav>
+<body>
+<img class="main-pic" src="https://blogs.psychcentral.com/mindfulness/files/2016/09/relax-4.jpg"/>
 </body>
+<footer>
+    <h4>This is a blurb about something important.<br>
+        It goes on the bottom of the site.<br>
+        The links could swap out content here if javascript is enabled.
+    </h4>
+</footer>
+
 </html>

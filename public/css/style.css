@@ -1,0 +1,32 @@
+body * {
+
+}
+
+
+.logo {
+    max-width: 50px;
+}
+
+.main-pic {
+    width: 100%;
+}
+
+header {
+    background: #fff;
+}
+
+.main-nav {
+    background: #baff89;
+}
+
+.contact-icon {
+    padding-left: 4px;
+}
+
+.email-icon {
+    padding-right: 4px;
+}
+
+footer {
+    text-align: center;
+}
