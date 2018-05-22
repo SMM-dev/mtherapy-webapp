@@ -1,5 +1,5 @@
 body * {
-
+    border: solid black;
 }
 
 
@@ -29,4 +29,16 @@ header {
 
 footer {
     text-align: center;
+    padding-top: 10px;
+}
+
+#map {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#content-pane {
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
 }

@@ -34,27 +34,42 @@
         <img class="logo" src="assets/logo.png" alt="logo"/>
     </a>
     <ul class="navbar-nav ml-auto">
-        <div class="collapse navbar-collapse">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link 3</a>
-            </li>
-        </div>
+        <li class="nav-item">
+            <a id="abt_tab" href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a id="loc_tab" href="#" class="nav-link">Location</a>
+        </li>
+        <li class="nav-item">
+            <a id="apnt_tab" href="#" class="nav-link">Book an Appointment</a>
+        </li>
+        <li class="nav-item">
+            <a id="rev_tab" href="#" class="nav-link">Reviews</a>
+        </li>
     </ul>
 </nav>
 <body>
 <img class="main-pic" src="https://blogs.psychcentral.com/mindfulness/files/2016/09/relax-4.jpg"/>
-</body>
-<footer>
-    <h4>This is a blurb about something important.<br>
-        It goes on the bottom of the site.<br>
-        The links could swap out content here if javascript is enabled.
-    </h4>
-</footer>
 
+<footer>
+    <noscript>
+        <p>Enable JavaScript for a better viewing experience</p>
+        <!-- Put rest of dynamic content here as static -->
+
+
+    </noscript>
+
+    <!-- Map data -->
+    <a id="map" href="<%= DIR_L %>" target="_blank">
+        <img src="<%= S_MAP %>" />
+    </a>
+
+    <h5 id="content-pane">Loading contents...
+    </h5>
+
+
+</footer>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/content.js"></script>
+</body>
 </html>
