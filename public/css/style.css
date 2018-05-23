@@ -36,6 +36,12 @@ main {
     box-shadow: 0 0 5px 1px black;
 }
 
+a:active, a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none
+}
+
 
 .logo {
     max-width: 50px;
