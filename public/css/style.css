@@ -1,30 +1,53 @@
-body * {
-    border: solid black;
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+/*
+Definitions appear in the same order here as they do on the html page
+left-to-right, top-to-bottom
+*/
+html, body, main {
+    height: 100%;
+}
+main {
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,249,1) 51%, rgba(204,204,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccff',GradientType=0 ); /* IE6-9 */
 }
 
-
-.logo {
-    max-width: 50px;
-}
-
-.main-pic {
-    width: 100%;
-}
-
-header {
-    background: #fff;
-}
-
-.main-nav {
-    background: #baff89;
-}
-
-.contact-icon {
+.phone-icon {
     padding-left: 4px;
 }
 
 .email-icon {
     padding-right: 4px;
+}
+
+.main-nav-gradient {
+    background: rgb(72,61,104); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(72,61,104,1) 47%, rgba(82,44,135,1) 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(72,61,104,1) 47%,rgba(82,44,135,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(72,61,104,1) 47%,rgba(82,44,135,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#483d68', endColorstr='#522c87',GradientType=0 ); /* IE6-9 */
+}
+
+.clickable:hover {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px black;
+}
+
+
+.logo {
+    max-width: 50px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.main-pic {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
@@ -35,10 +58,38 @@ footer {
 #map {
     display: inline-block;
     vertical-align: top;
+    float: right;
+    border: solid black 2px;
+    box-shadow: 5px 5px 10px 1px black;
 }
 
 #content-pane {
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#sub-content,#sub-content2 {
     display: inline-block;
     text-align: left;
-    padding: 5px;
+    vertical-align: top;
+    margin: 0 10px 0 10px;
 }
+
+#ct_hdr, #ct_hdr2 {
+    color: rgb(138, 43, 226);
+    font-size: 3em;
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+}
+
+#ct_bdy, #ct_bdy2 {
+    color: #130458;
+    font-family: cursive;
+}
+
+
+
+
+
