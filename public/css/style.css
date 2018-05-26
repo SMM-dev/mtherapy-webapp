@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Oregano');
+
 /*
 Definitions appear in the same order here as they do on the html page
 left-to-right, top-to-bottom
 */
-html, body, main {
-    height: 100%;
-}
-main {
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,249,1) 51%, rgba(204,204,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccff',GradientType=0 ); /* IE6-9 */
+html, body {
+    height: 108%; /* Without this, background color doesn't span full page */
+
+    background: rgb(255,255,255) !important; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,249,1) 51%, rgba(204,204,255,1) 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccff',GradientType=0 ) !important; /* IE6-9 */
+
 }
 
 .phone-icon {
@@ -34,6 +36,19 @@ main {
     background: rgba(255, 255, 255, 0);
     border-radius: 15px;
     box-shadow: 0 0 5px 1px black;
+    cursor: pointer;
+}
+
+table {
+    box-shadow: 2px 2px 2px 2px black;
+    -webkit-appearance: none;
+    margin: 0 auto;
+}
+
+td {
+    text-align: left;
+    border: solid black 1px;
+
 }
 
 a:active, a:focus {
@@ -42,6 +57,13 @@ a:active, a:focus {
     -moz-outline-style: none
 }
 
+.blk-link {
+    color: black;
+}
+
+.blk-link:hover {
+    color: black;
+}
 
 .logo {
     max-width: 50px;
@@ -67,6 +89,7 @@ footer {
     float: right;
     border: solid black 2px;
     box-shadow: 5px 5px 10px 1px black;
+    -webkit-appearance: none;
 }
 
 #content-pane {
@@ -85,17 +108,15 @@ footer {
 
 #ct_hdr, #ct_hdr2 {
     color: rgb(138, 43, 226);
-    font-size: 3em;
+    font-size: 3.2em;
     font-family: 'Italianno', cursive;
     font-weight: bold;
 }
 
 #ct_bdy, #ct_bdy2 {
     color: #130458;
-    font-family: cursive;
+    font-size: 1.4em;
+    font-family: 'Oregano', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
 }
-
-
-
-
-

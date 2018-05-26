@@ -9,30 +9,35 @@ const MAP = $('#map');
 
 
 const AVAILABILITY =
-    "Mon: 10:00 am - 6:00 pm <br/>" +
-    'Tue: 10:00 am - 6:00 pm <br/>' +
-    'Wed: closed <br/>' +
-    'Thu: 10:00 am - 6:00 pm <br/>' +
-    'Fri: closed <br/>' +
-    'Sat: 1:00 pm - 4:00 pm <br/>' +
-    'Sun: closed'
+    "<table>" +
+    "<tr><td>Mon:</td> <td>10:00 am - 6:00 pm </td></tr>" +
+    "<tr><td>Tue:</td> <td>10:00 am - 6:00 pm </td></tr>" +
+    "<tr><td>Wed:</td> <td>Closed </td></tr>" +
+    "<tr><td>Thu:</td> <td>10:00 am - 6:00 pm </td></tr>" +
+    "<tr><td>Fri:</td> <td>Closed </td></tr>" +
+    "<tr><td>Sat:</td> <td>1:00 pm - 4:00 pm </td></tr>" +
+    "<tr><td>Sun:</td> <td>Closed </td></tr>" +
+    "</table>";
 
 
-const EMAIL = "faithwhaleymsg@test.com";
-const PHONE = "(123) 456-7983"; //Phone# also referenced in server.js
-const ADDRESS = "677 Woodland Square Lp SE<br/>" +
+const EMAIL = "faithwhaley@yahoo.com";
+const EMAIL_LINK = '<a href="mailto:faithwhaley@yahoo.com" target="_blank">faithwhaley@yahoo.com</a>'
+const PHONE = "(303) 807-2668"; //Phone# also referenced in server.js
+const PHONE_LINK = '<a href=\"tel:13038072668\">(303) 807-2668</a>'
+const ADDRESS_LINK = '<a class="blk-link" href="https://www.google.com/maps/search/?api=1&query=677%20Woodland%20Square%20Lp%20SE%20Lacey%2C%20WA%2098503">' +
+    "677 Woodland Square Lp SE<br/>" +
     "Ste - C 4<br/>" +
-    "Lacey, WA 98503<br/>";
-const ABOUT_BLURB = "Do you hurt?  I specialize in helping to give relief from pain. <br/>" +
-    "Each client is treated according to their individual needs.<br/>" +
-    "During your session we will address the problems you are facing.<br/><br/>" +
+    "Lacey, WA 98503<br/>" + '</a>';
+const ABOUT_BLURB = "Do you hurt?  I specialize in relieving chronic aches and pains. <br/>" +
+    "Extra care is always taken to identify and address your specific needs.<br/>" +
+    "We will find the treatment that works best for you!<br/><br/>" +
     "Modalities include:<br/>" +
-    "Deep tissue, Swedish, trigger point, etc.<br/>" +
-    "Giving the body the tools it needs to heal and relax.";
+    "Deep Tissue, Swedish, and Trigger Point massages.<br/>" +
+    "Give the body the tools it needs to heal and relax.";
 
 const APNT_MSG = "Online Booking Coming Soon..."
-const APNT_MSG2 = "In the meantime, call:<br/>" + PHONE +
-    "<br/><br/>or send an email to:<br/>" + EMAIL +
+const APNT_MSG2 = "In the meantime, call:<br/>" + PHONE_LINK +
+    "<br/><br/>or send an email to:<br/>" + EMAIL_LINK +
     "<br/><br/> to schedule an appointment!";
 
 
@@ -51,7 +56,7 @@ APNT_T.on("click", () => {
 
 const updateContent = (tab) => {
 
-    toggleMap();
+    MAP.hide();
     clearText();
 
 
@@ -63,7 +68,8 @@ const updateContent = (tab) => {
 
         case LOC_T:
             SUB_HEAD[0].html('Location/Phone:');
-            SUB_TEXT[0].html(`${ADDRESS}<br/>${PHONE}`);
+            SUB_TEXT[0].html(`${ADDRESS_LINK}<br/>${PHONE_LINK}`);
+            MAP.show();
             break;
 
         case APNT_T:
@@ -76,14 +82,6 @@ const updateContent = (tab) => {
         default:
             SUB_HEAD[0].html("This content is currently unavailable");
             break;
-    }
-};
-
-const toggleMap = () => {
-    if (LOC_T.is(":focus")){
-        MAP.show();
-    } else {
-        MAP.hide();
     }
 };
 

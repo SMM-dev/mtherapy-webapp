@@ -9,22 +9,21 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <main>
         <header>
             <nav class="navbar navbar-expand navbar-light">
                 <ul class="nav navbar-nav mr-auto">
-                        <li>
-                            <a class="nav-link">
-                                <img class="phone-icon" src="assets/phone-icon.svg" /><%= P_N %>
+                        <li class="nav-item clickable">
+                            <a class="nav-link" href="tel:13038072668">
+                                <img class="phone-icon" src="assets/phone-icon.svg" />(303) 807-2668
                             </a>
                         </li>
                         <li class="clickable">
-                            <a href="mailto:<%= E_A %>" target="_blank" class="nav-link">
-                                <img class="contact-icon email-icon" src="assets/email-icon.svg" /><%= E_A %>
+                            <a href="mailto:faithwhaley@yahoo.com" target="_blank" class="nav-link">
+                                <img class="contact-icon email-icon" src="assets/email-icon.svg" />faithwhaley@yahoo.com
                             </a>
                         </li>
                         <li>
-                            <a href="<%= FB %>" target="_blank" class="nav-link">
+                            <a href="https://www.facebook.com/faithfischerwhaley/" target="_blank" class="nav-link">
                                 <img class="contact-icon" src="assets/facebook-icon.svg" />
                             </a>
                         </li>
@@ -32,18 +31,16 @@
             </nav>
         </header>
         <nav class="navbar navbar-expand main-nav-gradient ">
-            <a class="navbar-brand " href="#">
-                <img title="<%= B_N %>" class="logo" src="assets/logo.png" alt="logo"/>
-            </a>
+            <img title="<%= B_N %>" class="logo" src="assets/logo.png" alt="logo"/>
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item clickable">
-                    <a id="abt_tab" href="#" class="nav-link text-info">About</a>
+                    <a id="abt_tab" class="nav-link text-info">About</a>
                 </li>
                 <li class="nav-item clickable">
-                    <a id="loc_tab" href="#" class="nav-link text-info">Location</a>
+                    <a id="loc_tab" class="nav-link text-info">Location</a>
                 </li>
                 <li class="nav-item clickable">
-                    <a id="apnt_tab" href="#" class="nav-link text-info">Book an Appointment</a>
+                    <a id="apnt_tab" class="nav-link text-info">Book an Appointment</a>
                 </li>
             </ul>
         </nav>
@@ -80,6 +77,5 @@
         </footer>
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/content.js"></script>
-    </main>
 </body>
 </html>
