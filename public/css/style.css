@@ -5,6 +5,10 @@
 Definitions appear in the same order here as they do on the html page
 left-to-right, top-to-bottom
 */
+header {
+    background: #fff !important;
+}
+
 body {
     background: rgb(204,204,255) !important;
 }
