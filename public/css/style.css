@@ -5,15 +5,8 @@
 Definitions appear in the same order here as they do on the html page
 left-to-right, top-to-bottom
 */
-html, body {
-    height: 108%; /* Without this, background color doesn't span full page */
-
-    background: rgb(255,255,255) !important; /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,249,1) 51%, rgba(204,204,255,1) 100%) !important; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,249,1) 51%,rgba(204,204,255,1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccff',GradientType=0 ) !important; /* IE6-9 */
-
+body {
+    background: rgb(204,204,255) !important;
 }
 
 .phone-icon {
