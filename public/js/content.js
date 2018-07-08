@@ -19,11 +19,8 @@ const AVAILABILITY =
     "<tr><td>Sun:</td> <td>Closed </td></tr>" +
     "</table>";
 
-
-const EMAIL = "faithfulmassagetherapy@gmail.com";
-const EMAIL_LINK = '<a href="mailto:faithfulmassagetherapy@gmail.com" target="_blank">faithfulmassagetherapy@gmail.com</a>'
-const PHONE = "(303) 807-2668"; //Phone# also referenced in server.js
-const PHONE_LINK = '<a href=\"tel:13038072668\">(303) 807-2668</a>'
+const EMAIL_LINK = '<a href="mailto:faithfulmassagetherapy@gmail.com" target="_blank">faithfulmassagetherapy@gmail.com</a>';
+const PHONE_LINK = '<a href=\"tel:13038072668\">(303) 807-2668</a>';
 const ADDRESS_LINK = '<a class="blk-link" href="https://www.google.com/maps/search/?api=1&query=677%20Woodland%20Square%20Lp%20SE%20Lacey%2C%20WA%2098503">' +
     "677 Woodland Square Lp SE<br/>" +
     "Ste - C 4<br/>" +
@@ -96,5 +93,4 @@ const clearText = () => {
 
 //Begin with the ABOUT tab clicked
 ABOUT_T.trigger('click');
-
 })();
