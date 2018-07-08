@@ -20,8 +20,8 @@ const AVAILABILITY =
     "</table>";
 
 
-const EMAIL = "faithwhaley@yahoo.com";
-const EMAIL_LINK = '<a href="mailto:faithwhaley@yahoo.com" target="_blank">faithwhaley@yahoo.com</a>'
+const EMAIL = "faithfulmassagetherapy@gmail.com";
+const EMAIL_LINK = '<a href="mailto:faithfulmassagetherapy@gmail.com" target="_blank">faithfulmassagetherapy@gmail.com</a>'
 const PHONE = "(303) 807-2668"; //Phone# also referenced in server.js
 const PHONE_LINK = '<a href=\"tel:13038072668\">(303) 807-2668</a>'
 const ADDRESS_LINK = '<a class="blk-link" href="https://www.google.com/maps/search/?api=1&query=677%20Woodland%20Square%20Lp%20SE%20Lacey%2C%20WA%2098503">' +
