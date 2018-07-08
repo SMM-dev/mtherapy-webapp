@@ -28,12 +28,12 @@ const ADDRESS_LINK = '<a class="blk-link" href="https://www.google.com/maps/sear
     "677 Woodland Square Lp SE<br/>" +
     "Ste - C 4<br/>" +
     "Lacey, WA 98503<br/>" + '</a>';
-const ABOUT_BLURB = "Do you hurt?  I specialize in relieving chronic aches and pains. <br/>" +
-    "Extra care is always taken to identify and address your specific needs.<br/>" +
-    "We will find the treatment that works best for you!<br/><br/>" +
-    "Modalities include:<br/>" +
-    "Deep Tissue, Swedish, and Trigger Point massages.<br/>" +
-    "Give the body the tools it needs to heal and relax.";
+
+
+const ABOUT_BLURB = "At The Faithful Massage Therapist, we believe in helping you live your best life, pain free. <br/>" +
+    "Specializing in injury relief, we understand that your body is unique, and stay away from traditional \"one size fits all\" massages.<br/>" +
+    "Each client will receive a custom consultation, and is empowered during treatment to participate in the healing process, using therapeutic massage, ion cleansing, and aromatherapy.<br/><br/>";
+
 
 const APNT_MSG = "Online Booking Coming Soon..."
 const APNT_MSG2 = "In the meantime, call:<br/>" + PHONE_LINK +
@@ -62,7 +62,7 @@ const updateContent = (tab) => {
 
     switch(tab){
         case ABOUT_T:
-            SUB_HEAD[0].html('A Message From Faith Whaley:');
+            SUB_HEAD[0].html('A Message From Faith:');
             SUB_TEXT[0].html(ABOUT_BLURB);
             break;
 
