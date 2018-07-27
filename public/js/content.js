@@ -1,24 +1,45 @@
 (() => {
+'use strict';
 
-    const ABOUT_T = $('#abt_tab');
-    const LOC_T = $('#loc_tab');
-    const APNT_T = $('#apnt_tab');
-    const SUB_HEAD = [$('#ct_hdr'), $('#ct_hdr2')];
-    const SUB_TEXT = [$('#ct_bdy'), $('#ct_bdy2')];
-    const MAP = $('#map');
+const TABS = [
+    $('#abt_tab'),
+    $('#loc_tab'),
+    $('#apnt_tab')
+];
+
+const CONTENT = [
+    $('#about'),
+    $('#location'),
+    $('#appointment')
+];
 
 
-    ABOUT_T.on("click", () => {
-
-    });
-
-    LOC_T.on("click", () => {
-
-    });
-
-    APNT_T.on("click", () => {
-
-    });
-
+$( document ).ready(function() {
+    toggle(CONTENT[0]);
 
 });
+
+TABS[0].on("click", () => {
+    toggle(CONTENT[0]);
+});
+
+TABS[1].on("click", () => {
+    toggle(CONTENT[1]);
+});
+
+TABS[2].on("click", () => {
+    toggle(CONTENT[2]);
+});
+
+function toggle (div) {
+    // Hide all
+    hideall();
+    div.show();
+}
+
+function hideall () {
+    for (let i in CONTENT){
+        CONTENT[i].hide();
+    }
+}
+})();

@@ -127,6 +127,10 @@ a:active, a:focus {
     margin: 15px;
 }
 
+.toggleable {
+
+}
+
 @media screen and (max-width: 600px){
     #map {
         width: 100%;
