@@ -27,14 +27,6 @@ const ADDRESS_LINK = '<a class="blk-link" href="https://www.google.com/maps/sear
     "Lacey, WA 98503<br/>" + '</a>';
 
 
-const ABOUT_BLURB = "At The Faithful Massage Therapist, we believe in helping you live your best life, pain free. <br/>" +
-    "Specializing in injury relief, we understand that your body is unique, and stay away from traditional \"one size fits all\" massages.<br/>" +
-    "Each client receives a custom consultation, and is empowered to participate in the healing process of therapeutic massage, ion cleansing, and aromatherapy.<br/><br/>";
-
-
-
-
-
 
 
 
