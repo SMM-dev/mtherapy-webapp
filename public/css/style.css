@@ -1,24 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno');
 @import url('https://fonts.googleapis.com/css?family=Oregano');
 
-/*
-Definitions appear in the same order here as they do on the html page
-left-to-right, top-to-bottom
-*/
 header {
     background: #fff !important;
 }
 
 body {
     background: rgb(204,204,255) !important;
-}
-
-.phone-icon {
-    padding-left: 4px;
-}
-
-.email-icon {
-    padding-right: 4px;
 }
 
 .main-nav-gradient {
@@ -28,6 +16,12 @@ body {
     background: linear-gradient(to bottom, rgba(72,61,104,1) 47%,rgba(82,44,135,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#483d68', endColorstr='#522c87',GradientType=0 ); /* IE6-9 */
 }
+
+.contact-text {
+    color: black;
+    padding-left: 5px;
+}
+
 
 .clickable:hover {
     border-radius: 15px;
@@ -131,8 +125,24 @@ a:active, a:focus {
 
 }
 
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 650px) {
+
+    .contact-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px){
     #map {
-        width: 100%;
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .logo {
+        display: none;
+    }
+    .clickable {
+        font-size: .9em;
     }
 }
