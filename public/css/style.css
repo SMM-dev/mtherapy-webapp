@@ -43,6 +43,7 @@ td {
 
 main {
     text-align: center;
+    width: 100%;
 }
 
 a:active, a:focus {
@@ -86,7 +87,6 @@ a:active, a:focus {
     text-align: center;
     display: inline-block;
     margin: 0 auto;
-    max-width: 60%;
 }
 
 .description {
@@ -121,9 +121,6 @@ a:active, a:focus {
     margin: 15px;
 }
 
-.toggleable {
-
-}
 
 @media only screen and (max-width: 650px) {
 
