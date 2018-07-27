@@ -47,6 +47,10 @@ td {
 
 }
 
+main {
+    text-align: center;
+}
+
 a:active, a:focus {
     outline: 0;
     border: none;
@@ -74,11 +78,6 @@ a:active, a:focus {
     margin: 0 auto;
 }
 
-footer {
-    text-align: center;
-    padding-top: 10px;
-}
-
 #map {
     display: inline-block;
     vertical-align: top;
@@ -93,16 +92,22 @@ footer {
     text-align: center;
     display: inline-block;
     margin: 0 auto;
+    max-width: 60%;
 }
 
-#sub-content,#sub-content2 {
+.description {
     display: inline-block;
-    text-align: left;
     vertical-align: top;
     margin: 0 10px 0 10px;
+
+    color: #130458;
+    font-size: 1.4em;
+    font-family: 'Oregano', sans-serif;
+    text-align: center;
+
 }
 
-#ct_hdr, #ct_hdr2 {
+.title {
     color: rgb(138, 43, 226);
     font-size: 3.2em;
     font-family: 'Italianno', cursive;
@@ -110,10 +115,20 @@ footer {
     text-align: center;
 }
 
-#ct_bdy, #ct_bdy2 {
-    color: #130458;
-    font-size: 1.4em;
-    font-family: 'Oregano', sans-serif;
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.column {
+    display: inline-block;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 600px){
+    #map {
+        width: 100%;
+    }
 }
