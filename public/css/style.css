@@ -73,12 +73,20 @@ a:active, a:focus {
     width: 90%;
     margin: auto;
 }
+#services {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+
+
 #location {
-    width: 90%;
     margin: auto;
 }
 #appointment {
-    width: 90%;
     margin: auto;
 }
 
@@ -89,6 +97,7 @@ a:active, a:focus {
 .blk-link:hover {
     color: black;
 }
+
 
 .logo {
     max-width: 50px;
@@ -131,6 +140,33 @@ a:active, a:focus {
 
 }
 
+#services li button {
+    font-family: 'Oregano', sans-serif;
+    font-size: 2rem;
+}
+
+.toggle {
+    display: none;
+}
+
+.title:focus {
+    text-decoration: none;
+}
+
+.title:focus + .toggle {
+    display: inline-block;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.btn-link:after {
+    content:'\25BC';
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
 .title {
     color: rgb(138, 43, 226);
     font-size: 3.2em;
@@ -141,8 +177,9 @@ a:active, a:focus {
 
 .row {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin: 1em;
+    margin: 1em auto;
 }
 
 .column {

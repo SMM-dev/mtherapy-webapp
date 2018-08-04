@@ -2,12 +2,14 @@
 (() => {
     const TABS = [
         $('#abt_tab'),
+        $('#serv_tab'),
         $('#loc_tab'),
         $('#apnt_tab')
     ];
 
     const CONTENT = [
         $('#about'),
+        $('#services'),
         $('#location'),
         $('#appointment')
     ];
