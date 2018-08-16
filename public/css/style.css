@@ -188,6 +188,10 @@ a:active, a:focus {
     margin: 15px;
 }
 
+#carouselMain {
+    max-width: 1200px;
+    margin: auto;
+}
 
 @media only screen and (max-width: 650px) {
     .contact-text {
