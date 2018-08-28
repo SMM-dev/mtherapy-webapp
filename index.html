@@ -21,52 +21,46 @@
     <link rel="canonical" href="http://faithfulmassage.com"/>
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header>
-        <nav class="top-nav">
-            <ul class="top-nav-items">
-                <li>
-                    <a class="nav-link" href="tel:13038072668">
-                        <img class="contact-icon" src="public/assets/phone-icon.svg" alt="Telephone Icon"/><span class="contact-text">(303) 807-2668</span>
-                    </a>
+    <nav class="navbar navbar-expand-md navbar-dark main-nav-gradient">
+        <img title="The Faithful Massage Therapist" class="logo navbar-brand" src="public/assets/logo.png" alt="logo"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a id="abt_tab" class="nav-link" href="#about">About</a>
                 </li>
-                <li>
-                    <a href="mailto:faithfulmassagetherapy@gmail.com" target="_blank" class="nav-link">
-                        <img class="contact-icon" src="public/assets/email-icon.svg" alt="Email Icon"/><span class="contact-text">faithfulmassagetherapy@gmail.com</span>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="serv_tab" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#Swedish">Swedish Massage</a>
+                        <a class="dropdown-item" href="#Deep_tissue">Deep Tissue Massage</a>
+                        <a class="dropdown-item" href="#Lomilomi">Lomilomi Massage</a>
+                        <a class="dropdown-item" href="#Healing_touch">Healing Touch</a>
+                        <a class="dropdown-item" href="#Myotherapy">Myotherapy</a>
+                        <a class="dropdown-item" href="#TPT">Trigger Point Therapy</a>
+                        <a class="dropdown-item" href="#PNF">PNF</a>
+                        <a class="dropdown-item" href="#MLD">Manual Lymphatic Drainage</a>
+                        <a class="dropdown-item" href="#Gua_sha">Gua Sha</a>
+                        <a class="dropdown-item" href="#Thai">Thai Massage</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com/faithfischerwhaley/" target="_blank" class="nav-link">
-                        <img class="contact-icon" src="public/assets/facebook-icon.png" alt="Facebook Icon"/>
-                    </a>
+                <li class="nav-item">
+                    <a id="loc_tab" class="nav-link" href="#location">Location</a>
                 </li>
-                <li>
-                    <a href="https://www.yelp.com/biz/the-faithful-massage-therapist-lacey" target="_blank" class="nav-link">
-                        <img class="contact-icon" src="public/assets/Yelp_trademark_RGB_outline.png" alt="Yelp Icon"/>
-                    </a>
+                <li class="nav-item">
+                    <a id="apnt_tab" class="nav-link" href="#appointment">Appointments</a>
                 </li>
             </ul>
-        </nav>
-    </header>
-    <nav class="navbar navbar-expand main-nav-gradient ">
-        <img title="The Faithful Massage Therapist" class="logo" src="public/assets/logo.png" alt="logo"/>
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item clickable">
-                <a id="abt_tab" class="nav-link text-info">About</a>
-            </li>
-            <li class="nav-item clickable">
-                <a id="serv_tab" class="nav-link text-info">Services</a>
-            </li>
-            <li class="nav-item clickable">
-                <a id="loc_tab" class="nav-link text-info">Location</a>
-            </li>
-            <li class="nav-item clickable">
-                <a id="apnt_tab" class="nav-link text-info">Appointments</a>
-            </li>
-        </ul>
+        </div>
     </nav>
+
 
     <div id="carouselMain" class="carousel slide" data-ride="carousel" data-interval="10000">
         <ol class="carousel-indicators">
@@ -74,7 +68,6 @@
             <li data-target="#carouselMain" data-slide-to="1"></li>
             <li data-target="#carouselMain" data-slide-to="2"></li>
             <li data-target="#carouselMain" data-slide-to="3"></li>
-            <li data-target="#carouselMain" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -89,9 +82,6 @@
             <div class="carousel-item">
                 <img class="d-block w-100" src="public/assets/carousel-images/4.jpg" alt="Live Your Best Life">
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="public/assets/carousel-images/5.jpg" alt="Live Your Best Life">
-            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -102,7 +92,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
+    </header>
     <main>
         <noscript>
             <p>Enable JavaScript for a better viewing experience</p>
@@ -113,49 +103,49 @@
                 <h1 class="title">A Message From Faith:</h1>
                 <p class="description">At The Faithful Massage Therapist, we believe in helping you live your best life, pain free. <br/>
                     Specializing in injury relief, we understand that your body is unique, and stay away from traditional "one size fits all" massages.<br/>
-                    Each client receives a custom consultation, and is empowered to participate in the healing process of therapeutic massage, ion cleansing, and aromatherapy.<br/><br/>
+                    Each client receives a custom consultation, and is empowered to participate in the healing process of therapeutic massage, ion cleansing, and aromatherapy.
                 </p>
             </div>
             <ul id="services" class="row">
-                <li>
-                    <button class="title btn btn-link">Swedish massage:</button>
-                    <p class="description toggle" tabindex="1">A technique designed to relax the entire body. This is accomplished by rubbing the muscles with long gliding strokes in the direction of blood returning to the heart. But Swedish massage therapy goes beyond relaxation.</p>
+                <li id="Swedish">
+                    <h1 class="title">Swedish massage:</h1>
+                    <p class="description" tabindex="1">A technique designed to relax the entire body. This is accomplished by rubbing the muscles with long gliding strokes in the direction of blood returning to the heart. But Swedish massage therapy goes beyond relaxation.</p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Deep tissue massage:</button>
-                    <p class="description toggle"> Similar to Swedish massage, but the deeper pressure is beneficial in releasing chronic muscle tension. The focus is on the deepest layers of muscle tissue, tendons and fascia (the protective layer surrounding muscles, bones and joints). </p>
+                <li id="Deep_tissue">
+                    <h1 class="title">Deep tissue massage:</h1>
+                    <p class="description"> Similar to Swedish massage, but the deeper pressure is beneficial in releasing chronic muscle tension. The focus is on the deepest layers of muscle tissue, tendons and fascia (the protective layer surrounding muscles, bones and joints). </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Lomilomi massage:</button>
-                    <p class="description toggle"> An ancient Hawaiian energy-based massage technique used by the kahunas (Hawaiiannative healers), in which deep muscles are rigorously manipulated to interrupt muscle spasms, coupled with cross-fibrefriction and strokes directed away from the heart. Lomilomi massage is believed to be useful for chronic stress and tension, musculoskeletal disease and for increasing local blood and lymphatic circulation. </p>
+                <li id="Lomilomi">
+                    <h1 class="title">Lomilomi massage:</h1>
+                    <p class="description"> An ancient Hawaiian energy-based massage technique used by the kahunas (Hawaiiannative healers), in which deep muscles are rigorously manipulated to interrupt muscle spasms, coupled with cross-fibrefriction and strokes directed away from the heart. Lomilomi massage is believed to be useful for chronic stress and tension, musculoskeletal disease and for increasing local blood and lymphatic circulation. </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Healing Touch:</button>
-                    <p class="description toggle">Founded by registered nurse Janet Mentgen in 1989,Healing Touch (HT) is an energy therapy in which practitioners consciously use their hands and intent to promote health and healing. HT utilizes uses only very light or near-body touch to influence the energy field that penetrates and surrounds the body. </p>
+                <li id="Healing_touch">
+                    <h1 class="title">Healing Touch:</h1>
+                    <p class="description">Founded by registered nurse Janet Mentgen in 1989,Healing Touch (HT) is an energy therapy in which practitioners consciously use their hands and intent to promote health and healing. HT utilizes uses only very light or near-body touch to influence the energy field that penetrates and surrounds the body. </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Myotherapy:</button>
-                    <p class="description toggle">A technique of corrective muscle exercises involving pressure on fingers and joints to relieve pain or spasms. </p>
+                <li id="Myotherapy">
+                    <h1 class="title">Myotherapy:</h1>
+                    <p class="description">A technique of corrective muscle exercises involving pressure on fingers and joints to relieve pain or spasms. </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Trigger point therapy: </button>
-                    <p class="description toggle">A bodywork technique that involves the application of pressure to tender muscle tissue in order to relieve pain and dysfunction in other parts of the body. It may also be called myofascial (myo meaning muscle, fascial meaning connective tissue) trigger point therapy. </p>
+                <li id="TPT">
+                    <h1 class="title">Trigger point therapy: </h1>
+                    <p class="description">A bodywork technique that involves the application of pressure to tender muscle tissue in order to relieve pain and dysfunction in other parts of the body. It may also be called myofascial (myo meaning muscle, fascial meaning connective tissue) trigger point therapy. </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link"> PNF:</button>
-                    <p class="description toggle">Short for Proprioceptive neuromuscular facilitation, which is a method of stretching muscles to maximize their flexibility that is often performed with a partner or trainer and that involves a series of contractions and relaxations with enforced stretching during the relaxation phase —abbreviation PNF. </p>
+                <li id="PNF">
+                    <h1 class="title"> PNF:</h1>
+                    <p class="description">Short for Proprioceptive neuromuscular facilitation, which is a method of stretching muscles to maximize their flexibility that is often performed with a partner or trainer and that involves a series of contractions and relaxations with enforced stretching during the relaxation phase —abbreviation PNF. </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Manual lymphatic drainage:</button>
-                    <p class="description toggle"> (MLD) is a type of massage based on preliminary evidence which is hypothesized to encourage the natural drainage of the lymph, which carries waste products away from the tissues back toward the heart.</p>
+                <li id="MLD">
+                    <h1 class="title">Manual lymphatic drainage:</h1>
+                    <p class="description"> (MLD) is a type of massage based on preliminary evidence which is hypothesized to encourage the natural drainage of the lymph, which carries waste products away from the tissues back toward the heart.</p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Gua sha:</button>
-                    <p class="description toggle"> (Chinese: 刮痧) is a traditional Chinese medical treatment in which the skin is scraped to produce light petechiae. ... Gua sha is sometimes referred to as "scraping", "spooning" or "coining" by English speakers, it has also been given the descriptive French name, tribo-effleurage. </p>
+                <li id="Gua_sha">
+                    <h1 class="title">Gua sha:</h1>
+                    <p class="description"> (Chinese: 刮痧) is a traditional Chinese medical treatment in which the skin is scraped to produce light petechiae. ... Gua sha is sometimes referred to as "scraping", "spooning" or "coining" by English speakers, it has also been given the descriptive French name, tribo-effleurage. </p>
                 </li>
-                <li>
-                    <button class="title btn btn-link">Thai massage: </button>
-                    <p class="description toggle">Looks like a cross between acupressure, yoga , and zen shiatsu and is inspired by Buddhist teachings. The actual massage consists of slow, rhythmic compressions and stretches along the body's energy lines, also called sen in Thai. My training is a table version. </p>
+                <li id="Thai">
+                    <h1 class="title">Thai massage: </h1>
+                    <p class="description">Looks like a cross between acupressure, yoga , and zen shiatsu and is inspired by Buddhist teachings. The actual massage consists of slow, rhythmic compressions and stretches along the body's energy lines, also called sen in Thai. My training is a table version. </p>
                 </li>
             </ul>
             <div id="location" class="row">
@@ -192,16 +182,46 @@
                     <table class="description">
                         <tr><td>Mon:</td> <td>10:00 am - 6:00 pm </td></tr>
                         <tr><td>Tue:</td> <td>10:00 am - 6:00 pm </td></tr>
-                        <tr><td>Wed:</td> <td>Closed </td></tr>
+                        <tr><td>Wed:</td> <td>Appointment Only</td></tr>
                         <tr><td>Thu:</td> <td>10:00 am - 6:00 pm </td></tr>
-                        <tr><td>Fri:</td> <td>Closed </td></tr>
+                        <tr><td>Fri:</td> <td>Appointment Only </td></tr>
                         <tr><td>Sat:</td> <td>1:00 pm - 4:00 pm </td></tr>
-                        <tr><td>Sun:</td> <td>Closed </td></tr>
+                        <tr><td>Sun:</td> <td>Appointment Only </td></tr>
                     </table>
                 </div>
             </div>
         </div>
     </main>
+    <div id="background">
+        <img src="public/assets/background.png" alt="purple background">
+        <a href="https://www.freepik.com/free-photos-vectors/background" class="src">Background vector created by Starline - Freepik.com</a>
+    </div>
+    <footer>
+        <nav class="top-nav">
+            <ul class="top-nav-items">
+                <li>
+                    <a class="nav-link" href="tel:13038072668">
+                        <img class="contact-icon" src="public/assets/phone-icon.svg" alt="Telephone Icon"/><span class="contact-text">(303) 807-2668</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:faithfulmassagetherapy@gmail.com" target="_blank" class="nav-link">
+                        <img class="contact-icon" src="public/assets/email-icon.svg" alt="Email Icon"/><span class="contact-text">faithfulmassagetherapy@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/faithfischerwhaley/" target="_blank" class="nav-link">
+                        <img class="contact-icon" src="public/assets/facebook-icon.png" alt="Facebook Icon"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.yelp.com/biz/the-faithful-massage-therapist-lacey" target="_blank" class="nav-link">
+                        <img class="contact-icon" src="public/assets/Yelp_trademark_RGB_outline.png" alt="Yelp Icon"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
     <script src="public/js/jquery-3.3.1.slim.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/content.js"></script>
