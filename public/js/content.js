@@ -1,39 +1,42 @@
 "use strict";
 (() => {
-    const TABS = [
-        $('#abt_tab'),
-        $('#serv_tab'),
-        $('#loc_tab'),
-        $('#apnt_tab')
-    ];
 
-    const CONTENT = [
-        $('#about'),
-        $('#services'),
-        $('#location'),
-        $('#appointment')
-    ];
+
+    const CONTENT = [];
+
+
+    //Select all links with same-page targets, EXCEPT carousel buttons
+    $("a").each(function() {
+        if (this.hash && !this.hash.includes("carousel")) CONTENT.push(this);
+    });
+
+    //Attach click listener to each same-page link
+    CONTENT.forEach(function(link){
+        $(link).on("click", toggle);
+    });
 
     //hide all content except welcome message on initial load
     $( document ).ready(function() {
-        toggle(CONTENT[0]);
+        CONTENT[0].click();
     });
 
-    // Attach click listeners to tabs
-    for (let i in TABS){
-        TABS[i].on("click", () => {
-            toggle(CONTENT[i]);
-        });
-    }
-
-    function toggle (tab) {
+    //Hide all except content that corresponds with link clicked
+    function toggle (e) {
+        e.preventDefault();
         hideall();
-        tab.show();
+        $(this.hash).show();
     }
 
     function hideall () {
-        for (let i in CONTENT){
-            CONTENT[i].hide();
-        }
+        CONTENT.map(function(i) {
+            $(i.hash).hide();
+        });
     }
+
+    //Bootstrap navbar change active link
+    $(".nav .nav-link").on("click", function(e){
+        e.preventDefault();
+        $(".nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+    });
 })();
