@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     cursor: pointer;
 }
@@ -21,6 +25,7 @@ li {
 
 .navigationBar {
     text-align: center;
+    margin: 1.5rem 0;
 }
 
 .navigationLink {
@@ -32,12 +37,6 @@ li {
 .navigationLink:hover {
     text-decoration: none;
     color: rgb(28, 71, 122)
-}
-
-.clickable:hover {
-    border-radius: 15px;
-    box-shadow: 0 0 5px 1px black;
-    cursor: pointer;
 }
 
 .hoursTable {
@@ -75,6 +74,7 @@ a:active, a:focus {
     width: 30vw;
     margin-left: auto;
     margin-right: auto;
+    color: white;
     left: 0;
     right: 0;
     top: 0;
@@ -85,10 +85,8 @@ a:active, a:focus {
     display: inline-block;
     vertical-align: top;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2);
-    min-width: 300px;
-    width: 25vw;
-    max-width: 450px;
-    height: 20rem;
+    width: 350px;
+    height: 300px;
     margin: 20px;
     padding: 10px;
     border-radius: 8px;
@@ -127,9 +125,7 @@ a:active, a:focus {
 }
 
 .logoScale {
-    min-height: 300px;
-    height: 40vh;
-    max-height: 500px;
+    height: 350px;
 }
 
 #logoContainer{
@@ -154,7 +150,6 @@ a:active, a:focus {
 
 #map {
     display: inline-block;
-    min-width: 300px;
     width: 80vw;
     max-width: 500px;
     vertical-align: top;
@@ -203,8 +198,13 @@ footer {
     padding: 10px 50px 10px 5px;
 }
 
-.footerLink {
+.socialIcon {
+    padding-left: 50px;
+}
+
+.footerText {
     color: black;
+    margin-left: 5px;
 }
 
 .footerLink:hover {
@@ -212,18 +212,64 @@ footer {
     color: #444;
 }
 
-.contact-icon {
-    padding-right: 10px;
-}
-
-.socialIcon {
-    padding-right: 40px;
-}
 /* End Footer Styling */
 
 @media only screen and (max-width: 600px) {
+    .logoScale {
+        height: 300px;
+    }
+
+    .navigationLink {
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+
+    .serviceContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    #carouselMain {
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logoScale {
+        height: 200px;
+    }
+
+    .serviceContainer {
+        width: 250px;
+        height: 380px;
+    }
+
+    main {
+        padding-top: 1px;
+    }
+
+    #carouselMain {
+        width: 90vw;
+    }
+
+    .column {
+        margin: 0;
+    }
+
+    #map {
+        width: 90vw;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
     footer {
-        padding-left: 10px;
         text-align: left;
+        padding-left: 10px;
+        font-size: .7rem;
+    }
+    .footerItem {
+        display: block;
     }
 }
